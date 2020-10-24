@@ -1,0 +1,17 @@
+<div class="card">
+    <div class="card-header">
+      <h3>{{product.name}}</h3>
+    </div>
+    <div class="card-body">
+      <div>
+        <a [routerLink]="['/product',product.id]"><img width ="300" src="{{product.image}}" alt=""></a>
+      </div>
+      <strong>
+        price: {{ product.price }}
+      </strong>
+    </div>
+    <div class="card-footer">
+      <button class="btn btn-success" (click) = "addToCart(product)">Add to Card</button>
+      <button class="btn btn-info float-right" (click)="viewMore(product)">View More</button>
+    </div>
+  </div>

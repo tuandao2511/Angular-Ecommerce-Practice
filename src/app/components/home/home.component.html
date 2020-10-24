@@ -1,0 +1,13 @@
+<div class="container">
+  <div>
+    <!-- <h2>{{product.name}}</h2>
+
+    <img width="300" [src]="product.image" alt="">
+    <h2><strong>Price {{product.price}}</strong></h2> -->
+  </div>
+  <div class="row mt-4">
+      <div class="col-4 mt-3" *ngFor="let product of products">
+        <app-product-item [product]="product" (addProductToCart)="addToCartParent($event)"></app-product-item>
+      </div>
+  </div>
+</div>
